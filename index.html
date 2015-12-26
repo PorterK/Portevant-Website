@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Portevant | Web Development Team</title>
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+    <link type="text/css" rel="stylesheet" href="css/style.css"/>
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+
+    <div class="fixed-action-btn horizontal" style="bottom: 45px; right: 24px;">
+        <a class="btn-floating btn-large red darken-1">
+            <i class="large material-icons">near_me</i>
+        </a>
+        <ul>
+            <li><a class="btn-floating teal tooltipped" data-position="top" data-delay="50" data-tooltip="Explore our code!"><i class="material-icons">code</i></a></li>
+            <li><a class="btn-floating yellow darken-1 tooltipped" data-position="top" data-delay="50" data-tooltip="Shoot us an email!"><i class="material-icons">send</i></a></li>
+            <li><a class="btn-floating green tooltipped" data-position="top" data-delay="50" data-tooltip="Check out what we have in the cloud!"><i class="material-icons">cloud</i></a></li>
+            <li><a class="btn-floating blue tooltipped" data-position="top" data-delay="50" data-tooltip="Report a bug to us!"><i class="material-icons">report_problem</i></a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col s12 header">
+                <p>
+                    <img src="image/Pv.png" alt="Portevant" />
+                </p>
+            </div>
+            <div class="col s4 offset-s4 explore">
+                <p>
+                    <span>Beautiful, simply elegant designs.</span>
+                </p>
+                <p>
+                    <a class="waves-effect waves-light btn-large">Explore <i class="material-icons right">keyboard_arrow_down</i></a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.tooltipped').tooltip({delay: 50});
+        });
+    </script>
+</body>
+</html>
