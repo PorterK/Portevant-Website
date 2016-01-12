@@ -26,21 +26,56 @@
         </ul>
     </div>
 
-    <div class="container">
-        <div class="row">
-            <div class="col s12 header">
-                <p>
-                    <img src="image/Pv.png" alt="Portevant" />
+    <div class="row container head">
+        <div class="col s12 header">
+            <p>
+                <img src="image/Pv.png" alt="Portevant" />
+            </p>
+        </div>
+        <div class="col s12 m4 offset-m4 explore">
+            <p>
+                <span>Beautiful, simply elegant designs.</span>
+            </p>
+            <p>
+                <a class="waves-effect waves-light btn-large" onclick="Materialize.toast('Just scroll down to see more!', 2000)">Explore <i class="material-icons right">keyboard_arrow_down</i></a>
+            </p>
+        </div>
+    </div>
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="image/bg.jpg" class="hide-on-med-and-down"></div>
+        <div class="row container white">
+            <div class="col s12">
+                <h2 class="center-align">About us</h2>
+                <div class="divider"></div>
+            </div>
+            <div class="col s12">
+                <p class="flow-text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque aliquet leo sit amet est sollicitudin pulvinar.
+                    Donec tincidunt purus quam, vel consequat arcu consectetur vitae. Proin turpis risus, efficitur et sapien nec, semper dapibus augue.
+                    Aenean scelerisque leo aliquet bibendum dignissim. Fusce lacus mi, mollis eu gravida ut, ultrices vitae magna. Sed efficitur nisl nec massa congue,
+                    ut blandit justo aliquam. Nunc posuere fermentum auctor. Pellentesque consectetur turpis in accumsan rhoncus. Suspendisse dolor sapien, tempus rhoncus arcu
+                    scelerisque, mattis facilisis quam. Phasellus sit amet urna id justo euismod viverra ac sed urna. Vivamus orci orci, ullamcorper non maximus quis, luctus nec ipsum.
+                    Nullam sit amet est ut turpis congue consectetur. Vestibulum non sem dolor.
+                </p>
+                <blockquote>
+                    Donec a tortor lectus. Mauris porttitor risus in tellus consequat, nec ullamcorper ex pretium. Aenean nec tincidunt sem.
+                    Donec et sem tincidunt, imperdiet nisl nec, dictum ex. Quisque id nibh sed turpis aliquet commodo quis eu felis. Duis vehicula dictum ligula,
+                    at fringilla massa accumsan a. Aliquam lectus lectus, facilisis ac varius nec, mollis eu nunc. Nulla arcu eros, aliquam vel commodo sit amet, rutrum in orci.
+                </blockquote>
+                <p class="flow-text">
+                    Suspendisse ut euismod dui, nec semper magna. Ut ornare feugiat sem, sit amet rhoncus erat.
+                    Vivamus sed semper quam. Donec cursus vulputate ex, sed interdum erat pellentesque eu. Integer ut accumsan erat, eu consectetur lectus.
+                    Cras id felis a odio varius faucibus non nec urna. Phasellus hendrerit eleifend placerat. Donec ut porta turpis, nec rutrum purus.
+                    Nullam id sodales leo, sed hendrerit urna. Nunc venenatis tellus ac turpis suscipit, sed fringilla augue consectetur. Maecenas ac mauris sit amet erat lobortis mollis.
                 </p>
             </div>
-            <div class="col s12 m4 offset-m4 explore">
-                <p>
-                    <span>Beautiful, simply elegant designs.</span>
-                </p>
-                <p>
-                    <a class="waves-effect waves-light btn-large" onclick="Materialize.toast('Just scroll down to see more!', 2000)">Explore <i class="material-icons right">keyboard_arrow_down</i></a>
-                </p>
-            </div>
+        </div>
+    </div>
+
+    <div class="row teal white-text">
+        <div class="col s12">
+            <h2 class="center-align">Some of our work</h2>
         </div>
     </div>
 
@@ -51,6 +86,11 @@
         $(document).ready(function(){
             $('.tooltipped').tooltip({delay: 50});
         });
+
+        $(document).ready(function(){
+            $('.parallax').parallax();
+        });
+
     </script>
 </body>
 </html>

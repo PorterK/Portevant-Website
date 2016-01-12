@@ -8,6 +8,9 @@
     height: 20vw;
     margin: 0 auto;
 }
+.head{
+    height: 100vh;
+}
 .explore p{
     padding-top: 25px;
     text-align: center;
@@ -16,4 +19,8 @@
     width: 100%;
     padding: 10px 10px 20px;
     font-size: 1.5em;
+}
+.parallax-container{
+    height: auto;
+    bottom: -20px;
 }
