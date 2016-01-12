@@ -10,6 +10,8 @@
 }
 .head{
     height: 100vh;
+    position: relative;
+    margin-bottom: -20px !important;
 }
 .explore p{
     padding-top: 25px;
@@ -21,6 +23,18 @@
     font-size: 1.5em;
 }
 .parallax-container{
+    height: auto;
+    bottom: -20px;
+}
+.showcase{
+    height: 250px;
+    padding: 15px;
+    margin: 15px 0;
+}
+.no-margin{
+    margin:0 !important;
+}
+.work{
     height: auto;
     bottom: -20px;
 }
